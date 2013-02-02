@@ -1,0 +1,40 @@
+body {
+    background-image: url('http://cat_cool.jpg.to/');
+    font-family: fantasy;
+}
+
+#container {
+    min-width: 80%;
+    max-width: 100%;
+    width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {}
+
+nav a {
+    display: inline-block;
+    width: 47%;
+    margin: 1%;
+    padding: 0;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    height: 72px;
+    font-family: "Arial Black", "Book Antiqua", Arial, sans;
+}
+
+article {}
+
+article img {
+    width: 29%;
+    margin: 2%;
+    padding: 0;
+}
