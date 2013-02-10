@@ -1,24 +1,11 @@
-var greetings_used = [];
 
-var Greeter = function(greeting) {
-    this.greeting = greeting;
+document.getElementsByClassName("externallink")[0].addEventListener("click", external_check);
 
-    greetings_used.push(greeting);
-
-    this.greet = function(who, times) {
-        for (var i=0; i < times; i++) {
-            console.log(this.greeting + " " + who);
-        }
+function external_check(e) {
+    if (confirm("Would you really leave us? :-'( ")) {
+        return;
+    }
+    else {
+        e.preventDefault();
     }
 }
-
-var get_variaty = function() {
-    return greetings_used.length;
-}
-
-Sam = new Greeter("Yo");
-Jose = new Greeter("Hey");
-Veronica = new Greeter("Wassssuppppp");
-
-console.log(get_variaty());
-console.log(greetings_used);
